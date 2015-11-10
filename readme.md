@@ -1,27 +1,31 @@
-## Laravel PHP Framework
+# Weather Data Tool - Kyoto University
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+Project 2.1 for the Hanze Hogeschool, consisting of a weather statistics web
+application.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+:sunny: :snowflake: :umbrella: :cloud: :snowman: :zap: :cyclone:
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+## Dependencies
 
-## Official Documentation
+Building requires Composer and NPM@2+. Running
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+```
+composer install
+```
 
-## Contributing
+in the project root directory will install all back-end Composer dependencies
+and front-end NPM dependencies.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+The build process compiles Sass stylesheets from `resources/assets/sass` to a
+CSS file at `public/style/app.css`, and the JSX source code from
+`resources/assets/js` to a JS file at `public/js/app.js` using Babel@5.
 
-## Security Vulnerabilities
+## Running
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+The Laravel application can be run with live data in conjuction with the storage
+server at [IcyPalm/2.1-unwdmi-server](https://github.com/IcyPalm/2.1-unwdmi-server)
+and the generator provided with the Learning Tasks material.
 
-### License
+## Licence
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+[MIT](./LICENSE)
